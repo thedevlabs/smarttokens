@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>Info</title>
+<title>Contact Info</title>
 </head>
 <body>
 
@@ -9,6 +9,7 @@ User Information:
 
 Name: {$name}
 Address: {$address}
+Address: {$cell_phone}
 </pre>
 
 </body>
