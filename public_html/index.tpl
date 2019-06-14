@@ -9,7 +9,7 @@ User Information:
 
 Name: {$name}
 Address: {$address}
-Address: {$cell_phone}
+Mobile Phone: {$cell_phone}
 </pre>
 
 </body>
