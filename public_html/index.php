@@ -1,6 +1,8 @@
 <?php
 
-require '../vendor/smarty/Smarty.class.php';
+error_reporting(E_ALL);
+
+require '../vendor/smarty/smarty/libs/Smarty.class.php';
 
 // create object
 $smarty = new Smarty;
