@@ -20,32 +20,16 @@
 <body>
 
     <pre>
-
-Date: {$smarty.now|date_format:"%b %e, %Y"}
-
-User Information:
-
-Name: {if $nickname neq ''}
-{$nickname}
-{elseif $name neq ''}
-{$name}
-{else}
-Friend
-{/if}
-Address: {$address}
-Mobile Phone: {$cell_phone}
-
+<h2>{$smarty.now|date_format:"%b %e, %Y"}</h2> 
 </pre>
 
     <form>
         <fieldset>
-            <legend>Legend</legend>
-            <div class="form-group row">
-                <label for="staticEmail" class="col-sm-2 col-form-label">Email</label>
-                <div class="col-sm-10">
-                    <input type="text" readonly="" class="form-control-plaintext" id="staticEmail"
-                        value="email@example.com">
-                </div>
+            <h3>Commit Card</h3>
+            <div class="form-group">
+                <label for="exampleInputName">First and Last Name</label>
+                <input type="name" class="form-control" id="exampleInputName" aria-describedby="nameHelp"
+                    placeholder="Enter name">
             </div>
             <div class="form-group">
                 <label for="exampleInputEmail1">Email address</label>
@@ -55,17 +39,17 @@ Mobile Phone: {$cell_phone}
                     else.</small>
             </div>
             <div class="form-group">
-                <label for="exampleInputPassword1">Password</label>
-                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                <label for="examplePhoneNumber">Phone Number</label>
+                <input type="phoneNumber" class="form-control" id="examplephoneNumber" placeholder="Phone Number">
             </div>
             <div class="form-group">
-                <label for="exampleSelect1">Example select</label>
-                <select class="form-control" id="exampleSelect1">
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
-                    <option>4</option>
-                    <option>5</option>
+                <label for="exampleSelect1">How did you hear about this meeting?</label>
+                <select class="form-control" id="howYouHeard">
+                    <option>Mailing</option>
+                    <option>Through a Friend</option>
+                    <option>Online</option>
+                    <option>Window Announcement</option>
+                    <option>Phone Call</option>
                 </select>
             </div>
             <div class="form-group">
@@ -152,6 +136,15 @@ Mobile Phone: {$cell_phone}
         {/foreach}
     </table>
 
+    Name: {if $nickname neq ''}
+    {$nickname}
+    {elseif $name neq ''}
+    {$name}
+    {else}
+    Friend
+    {/if}
+    Address: {$address}
+    Mobile Phone: {$cell_phone}
 
 
 
