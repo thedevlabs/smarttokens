@@ -35,7 +35,13 @@
                   <button type="submit" class="btn btn-primary">Submit</button>
                 </fieldset>
               </form>
-
+              <pre>	
+                    User Information:	
+                    
+                     Name: {$name}	
+                    Address: {$address}	
+                    Mobile Phone: {$cell_phone}	
+                    </pre>
 
 </body>
 </html>
